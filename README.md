@@ -9,7 +9,7 @@ It demonstrates progress in layout, responsive design, and typography.
 - Practice files for learning and improvement
 
 ## Purpose
-Shared here for scholarship reviewers to see my coding practice and learning journey.
+Shared here for people to see my coding practice and learniing journey
 
 *Author:* Faith (faithcodes-tech)  
-*Contact:* your-email@example.com
+*Contact:* opadiranfaith20@gmail.com
