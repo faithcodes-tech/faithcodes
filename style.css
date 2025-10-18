@@ -1,0 +1,910 @@
+
+.div1>p{
+    color: brown;
+    text-align: center;
+    font-size: 30px ;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: auto;
+    position: relative;
+}
+
+.sub-box{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+.sub-box:hover{
+    cursor: pointer;
+    transition: 2s;
+    box-shadow: 0 0 60px white;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+table tbody> tr:nth-child(3){
+    background-color: lightgrey;
+}
+.div2>#hello{
+    background-color: red;
+}
+.hello:target{
+    color: yellow;
+    background-color: #000000;
+}
+.div3>p{
+    border: 1px solid black;
+    width: 200px;
+    margin: auto;
+    padding: 2px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 30px;
+}
+.div3>.p3:hover{
+    width: 700px;
+    transition: 2s;
+    transition-timing-function: 4s;
+    height: 100px;
+    white-space: normal;
+}
+h1{
+    width: 400px;
+    margin: auto;
+    border: 2px solid black;
+    word-break: break-all;
+}   
+@font-face {
+    font-family: Myfonts;
+    src: url(fonts/BitcountGridDouble-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
+}
+.h2{
+    font-family: Myfonts;
+    font-size: 40px;
+    text-align: center;
+}
+@font-face {
+    font-family: Chinese;
+    src: url(fonts/NotoSansSC-VariableFont_wght.ttf);
+}
+.div4{
+    font-family: Chinese;
+    font-size: 30px;
+    text-align: center;
+}
+.box{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+.red{
+    background-color: red;
+    left:50px;
+    top: 50px;
+    z-index: 1;
+}
+.blue{
+    background-color: blue;
+    left:100px;
+    top: 100px;
+    z-index: 2;
+}
+.green{
+    background-color:green  ;
+    left:150px;
+    top: 150px;
+    z-index: 3;
+}
+.container{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border: 2px solid black;
+}
+.black, .moved, .green, .light-blue{
+    width: 200px;
+    height: 200px;
+}
+.moved{
+    transform: translate(90px,50px) ;
+    background: lightcoral;
+}
+.black{
+    background: black;
+}
+.light-blue{
+    transform: rotate(45deg);
+    margin: auto;
+    font-family: Myfonts;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-top: 10px solid grey;
+    background-color: lightblue;
+}
+
+.light-blue>p{
+    transform: rotate(315deg);
+}
+.div5>.header1, .scaled, .skew, .skew-1{
+    color: black;
+    background: lightgoldenrodyellow;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Myfonts;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.scaled{
+    transform: scaleX(.5);
+    transform: scaleY(.5);
+}
+.skew{
+    transform: skew(20deg, 20deg);
+}
+.skew-1{
+    transform: skew(20deg, -20deg);
+}
+.commondiv{
+    width: 200px;
+    height: 200px;
+    background: rgb(8, 255, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Myfonts;
+    font-weight: bolder;
+    font-size: larger;
+    margin: auto;
+    
+}
+.div6:hover{
+    transform: translate(-9px, -7px);
+    transition: 2s;
+    box-shadow: 20px 20px 40px rgb(9, 12, 209);
+    cursor: pointer;
+}
+.div7{
+    transform: rotateZ(90deg);
+}
+.without-transition:hover{
+    width: 400px;
+}
+.with-transition{
+    width: 200px;
+    height: 200px;
+    background: rgb(8, 255, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Myfonts;
+    font-weight: bolder;
+    font-size: larger;
+    margin: auto;
+    transition: width 2s linear .5s, background-color 2.5s ease-in .5s ;
+}
+.with-transition:hover{
+    background-color: black;
+    width: 400px;
+
+}
+.keyframes{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: bisque;
+    animation-name: MyAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes MyAnimation{
+    from{
+        background-color:blue;
+    }
+    to{
+       background-color:brown;
+    }   
+}
+.keyframes-2{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: rgb(119, 40, 102);
+    animation-name: MyAnimation2;
+    
+    animation-timing-function: ease-in-out ;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: resume;
+    position: relative;
+
+}
+@keyframes MyAnimation2{
+    from{
+        left: 0px;
+    }
+    to{
+        left: 400px ;
+    }
+
+}
+.keyframes-3{
+    justify-content: center;
+    display: flex;
+    font-family: Myfonts;
+    font-size: 50px;
+}
+.p4{
+    animation-name: myAnimaton3;
+    position: relative;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+    animation-timing-function: linear;
+
+}
+@keyframes myAnimaton3{
+    0%{
+        color: red;
+    }
+    20%{
+        color: green;
+    }
+    40%{
+        color: yellow;
+    }
+    60%{
+        color: lightblue;
+    }
+    80%{
+        color: lightcyan;
+    }
+    100%{
+        color: purple;
+    }
+}
+.box-1{
+    width: 650px;
+    height: 650px;
+    background-color: black;
+    position: relative;
+    margin: auto;
+}
+.center{
+    width: 150px ;
+    height: 150px;
+    border-radius: 100%;
+    background-color: orange;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 90px 30px orange;
+}
+.orbit{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    animation: spin 3s linear 9s infinite;
+    animation-play-state: running;
+}
+.orbit-2{
+    width: 500px;
+    height: 500px;
+    border-radius: 0%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    animation: spin 9s linear infinite;
+    animation-play-state: running;
+}
+
+.planet{
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    border-radius: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+}
+.planet-2{
+    width: 50px;
+    height: 50px;
+    background-color:darkred;
+    border-radius: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+}
+@keyframes spin{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.rotation{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    background-color: black;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Myfonts;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    animation: rotate 4s linear infinite;
+}
+.sub-rotation{
+    border: none;
+    animation: myAnimaton3 9s linear infinite;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.column-1{
+    column-count: 3;
+    column-width: 100px;
+    column-rule-style: double;
+    column-rule-color: green;
+    column-rule-width: 10px;
+}
+/*or u can do the short form of column this way
+ column: column-width, column-count;
+ another way for the short hand column-rule is:
+ column-rule: column-rule-color, column-rule-style, column-rule-width ;*/
+.column-h1{
+    border: none;
+    column-span: all;
+    text-align: center;
+}
+.outline-1{
+    width: 300px;
+    height: auto;
+    border: 1px solid black;
+    outline: 3px solid blue;
+    text-align: center;
+    outline-offset: 5px;
+    margin: auto;
+}
+.box-2{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 10px solid black;
+    margin:auto;    
+}
+.box-3{
+    width: 200px;
+    height: 200px;  
+    background-color: yellow;
+    margin: auto;
+    padding: 10px;
+    border: 10px solid black;
+    box-sizing: content-box;
+}
+.box-4{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 10px solid black;
+    margin:auto;
+    background-color: blueviolet;
+    box-sizing: border-box ; 
+
+}
+.container-1{
+    background-color: yellow;
+    display: flex;
+    padding: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container-1>div{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin: 5px;
+    display: flex;
+    color: yellow;
+    font-family: Myfonts;
+    font-size: 60px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container-2{
+    background-color: yellow;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.container-1>.div8+.div9, .container-1>.div9+.div10{
+    flex-grow: 2;
+}
+.container-1>.div9+.div10{
+    flex-grow: 3;
+}
+.container-1>.div8{
+    flex-grow: 4;
+}
+.container-2>div{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin: 5px;
+    display: flex;
+    color: yellow;
+    font-family: Myfonts;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.div12{
+    align-self: center;
+}
+.container-2>.div11+.div12{
+    flex-grow: 2;
+}
+.container-2>.div12+.div13{
+    flex-grow: 3;
+}
+.container-1>.div11{
+    flex-grow: 4;
+}
+/*flex grow did not work for container-2, because i used#
+flex-direction: column;*/
+.container-3{
+    background-color: yellow;
+    display: flex;
+    padding: 40px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.container-3>div{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin: 5px;
+    display: flex;
+    color: yellow;
+    font-family: Myfonts;
+    font-size: 60px;
+    align-items: center;
+    justify-content: center;    
+}
+.container-3>.div14+.div15{
+    flex-grow: 1;
+}
+.container-3>.div15+.div16{
+    flex-shrink: 3;
+}
+.container-3>.div15{
+    flex-shrink: 3;
+}
+.css-layout{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    margin: 0 0 10vh;
+}
+.footer-1{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.header-1,.footer-1{
+    background-color: blue;
+    color: white;
+    height: 10vh;
+    padding: 20px;
+}
+article, nav, aside{
+    
+    padding: 20px;
+}
+nav{
+    background-color: yellow;
+}
+article{
+    height: 80vh;
+    background-color: pink;
+
+}
+aside{
+    background-color: gold;
+}
+
+@media screen and (min-width:500px){
+    main{
+        display: block;
+    }
+    article, nav, aside{
+        width: 100%; 
+    }
+}
+*{
+    box-sizing: border-box;
+}
+.css-dropdown{
+    margin-bottom: 100px;
+    display: inline-block;
+    position: relative;
+}
+.content-1{
+    
+    display: none;
+    position: absolute;
+
+}
+.css-dropdown-2{
+    position: relative;
+    display: inline-block;
+    height: 200px;
+
+}
+.css-dropdown-button{
+    padding: 15px;
+    text-align: center;
+    background-color: #173459;
+    border: none;
+    width: 300px;
+    color: white;
+}
+.css-dropdown-content{
+    position: absolute;
+    height: 0px;
+    transition: height 2s;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.3), 0 14px 11px rgba(0, 0, 0, 0.22);
+}
+.css-dropdown-2:hover>.css-dropdown-content{
+    height: 150px;
+}
+.css-dropdown-content>a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+.css-dropdown-content>a:hover{
+    color: white;
+    background-color: #903c56;
+}
+
+.animated{
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    
+}
+.actual-rotation{
+    width: 1000px;
+    height: 1000px;
+    animation: spin-2 4s linear infinite;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: conic-gradient(red, brown, orange,yellow);
+}
+.stagnant-one{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Myfonts;
+    font-size: 40px ;
+    text-align: center;
+    background-color: transparent;
+
+}
+.animated>.stagnant-one>textarea{
+    animation: myAnimaton3 10s linear infinite alternate;
+    border: none;
+}
+.stagnant-one>textarea{
+    outline: none;
+    height: 150px;
+    width: 150px;
+    border: none;
+    background-color: rgb(225, 225, 225 / 1.0);
+    text-align: center;
+    align-items: center;
+    display: flex;
+
+}
+@keyframes spin-2{
+    100%{
+            transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.animated-box-container{
+    height: 600px;
+    width: 600px;
+    background-color: black;
+    border:none;
+    margin: auto;
+    position: relative;
+}
+.animated-2{
+    width: 290px;
+    height: 290px;
+    background-color: transparent;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.actual-rotation-2{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: conic-gradient(red, orange, yellow, lime, blue, purple, red);
+    border-radius: 30px;
+    animation: spin-border 4s linear infinite;
+
+}
+.animated-bg{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    background: linear-gradient(45deg, #ff0080, #ff8c00, #40e0d0);
+    background-size: 400% 400%;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: bg-move 6s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stagnant-one-2{
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Myfonts;
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes spin-border{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+@keyframes bg-move{
+    0%{
+        background-position: 0 0%;
+    }
+    50%{
+        background-position: 100% 0%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+}
+.animated-box-container>.animated-2>.animated-bg>.stagnant-one-2>h1{
+    border: none;
+    animation: myAnimaton3 5s linear infinite;
+}
+.whole-nav-bar{
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    
+    position: relative;
+
+}
+.nav-bar{
+    background-color: lightgrey;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow-y: auto;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.nav-bar> ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar> ul >li >a{
+    padding: 10px;
+    background: lightgrey;
+}
+.nav-bar>ul> li>a:hover{
+    background: #173459;
+    color: #f8f9f9;
+}
+.nav-bar .active{
+    background-color: #173459;
+    color: white;
+}
+.nav-bar li{
+    border-bottom: 1px solid #333;
+}
+.nav-bar li:last-child{
+    border: none;
+}
+.content-2{
+    width: 70%;
+    margin-left: 30%;
+    padding: 15px;
+
+}
+.nav-bar-2 a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.nav-bar-2> ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar-2>ul> li>a:hover{
+    background: #173459;
+    color: #f8f9f9;
+}
+.nav-bar-2> ul >li >a{
+    padding: 10px;
+    background: lightgrey;
+}
+.nav-bar-2 .active-2{
+    background-color: #173459;
+    color: white;
+}
+.nav-bar-2>ul>li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    border-left: 1px solid black;
+}
+.body-1{
+    border: 1px solid black;
+    position: relative;
+}
+.nav-bar-2{
+    width: 100%;
+    top: 0px;
+    bottom:0px ;
+    position: sticky;
+}
+.body-2{
+    min-height: 700px;
+    border: 1px solid black;
+    flex-direction: column ;  
+    display: flex;
+    box-sizing: border-box;
+}
+.body-2> .footer-2{
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+.main-2{
+    flex: 1 0 auto;
+}
+.footer-2{
+    color: #fff;
+    background-color: #333;
+    font-size: 80%;
+}
+.footer-copyright{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #111;
+    padding: 10px;
+    height: 40px;
+
+}
+.footer-body{
+    margin-bottom: 40px;
+    padding: 30px;
+    
+}
+.footer-body> div:first-child{
+    font-size: 50px;
+}
+.footer-body ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.footer-body li>a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 7px;
+    font-size: 10px;
+}
+.pagination ul{
+    list-style-type: none;
+}
+.pagination{
+    display: inline-block;
+}
+.pagination li{
+    display: inline;
+}
+.pagination>ul>li>a{
+    text-decoration: none;
+    color: black;
+    padding: 7px 14px;
+}
+
+
+
+
+
